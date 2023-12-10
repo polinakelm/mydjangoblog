@@ -57,9 +57,4 @@ python manage.py runserver
 * [Pip](https://pip.pypa.io/en/stable/) - Dependency Management
 
 
-## Authors
-
-* **Your Name** - *Initial work* - [YourUsername](https://github.com/YourUsername)
-
-## Acknowledgments
 
