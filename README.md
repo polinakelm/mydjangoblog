@@ -20,7 +20,7 @@ A step-by-step series of examples that tell you how to get a development environ
 
 1. Clone the repository:
    ```bash
-   git clone [https://yourproject.git](https://github.com/polinakelm/mydjangoblog.git)
+   git clone https://github.com/polinakelm/mydjangoblog.git
    ```
 2. Navigate to the project directory:
    ```bash
