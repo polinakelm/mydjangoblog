@@ -1,0 +1,71 @@
+.posts{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items : center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.posts h3{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.aside_l{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    margin-top: 483px;
+    margin-left: 170px;
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0;
+    padding-top: 20px;
+}
+
+
+.aside_r{
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    margin-top: 483px;
+    margin-right: 90px;
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    right: 0;
+    padding-top: 20px;
+}
+
+
+aside h2{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.post{
+    margin-bottom: 68px;
+}
+
+.arrow_left{
+
+    margin-top: 15px;
+    margin-left: -60px;
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    left: 0;
+    padding-top: 30px;
+}
+
+.arrow_right{
+    rotate: 180deg;
+    margin-top: 15px;
+    margin-right: 38px;
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    top: 0; /* Stay at the top */
+    right: 0;
+    padding-top: 20px;
+
+}

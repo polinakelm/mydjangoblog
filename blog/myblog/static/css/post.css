@@ -1,0 +1,43 @@
+.post_title{
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align:center;
+}
+
+.post_text{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+.post_img{
+    width: 831px;
+    height: max-content;
+    flex-shrink: 0;
+}
+
+.post_content{
+    display: flex;
+    margin-top: 91px;
+    margin-inline: auto;
+    display: flex;
+    width: 1629px;
+    height: 408px;
+    align-items: center;
+    gap: 82px;
+}
+
+.footer_img {
+    width:100%;
+    margin-top: 108px;
+}

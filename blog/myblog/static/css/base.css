@@ -1,0 +1,50 @@
+
+.logo {
+    color: #000;
+    text-align: justify;
+    font-family: Monoton;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: middle;
+    margin-left: 2%;
+    flex: 1;
+}
+
+.bar {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    vertical-align: middle;
+    flex: 3;
+
+
+}
+
+a{
+    text-decoration: none;
+
+}
+
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 110px;
+
+}
+
+.serch{
+    width: 32px;
+    height: 32px;
+    flex: 2;
+
+}
+

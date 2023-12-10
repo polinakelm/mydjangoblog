@@ -1,0 +1,76 @@
+h1{
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+h2{
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.name{
+    border-radius: 61px;
+    background: #EFEFEF;
+    width: 654px;
+    height: 74px;
+    flex-shrink: 1;
+    margin-left: 70px;
+}
+.email{
+    border-radius: 61px;
+    background: #EFEFEF;
+    width: 654px;
+    height: 74px;
+    flex-shrink: 1;
+    margin-left: 41px;
+}
+
+.feedback{
+    border-radius: 61px;
+    background: #EFEFEF;
+    width: 1398px;
+    height: 318px;
+
+
+}
+
+
+.cont{
+    display: flex;
+
+}
+
+.feedback_form{
+    margin-left: 10%;
+
+    display: grid;
+}
+
+button{
+    width: 192px;
+    height: 74px;
+    flex-shrink: 0;
+    border-radius: 61px;
+    border: 1px solid #000;
+    background: #EFEFEF;
+    margin-top: 30px;
+}
+
+button:active {
+    background-color: #808080;
+}
+
+.feedbacks_display{
+    padding-left: 10%;
+}

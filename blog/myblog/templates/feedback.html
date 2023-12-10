@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<link href="{% static 'css/feedback.css' %}" rel="stylesheet">
+<form method="post" action="{% url 'feedback' %}">
+    {% csrf_token %}
+    <div class="feedback_form">
+      <h1>Можешь поделиться обратной связью :)</h1>
+        <section class="cont">
+            <h2>Имя:</h2>
+            <input class="name" name="name">
+        </section>
+      <section class="cont">
+            <h2>Почта:</h2>
+            <input class="email" name="email">
+      </section>
+            <input class="feedback" name="feedback">
+      <button type="submit">Отправить</button>
+    </div>
+</form>
+<div class="feedbacks_display">
+  <h1>Последние отзывы</h1>
+  {% for feedback in feedbacks %}
+        <div>
+          <h2>От: {{ feedback.name }}</h2>
+          <p>Email: {{ feedback.email }}</p>
+          <p>Отзыв: {{ feedback.text }}</p>
+        </div>
+  {% endfor %}
+</div>
+{% endblock %}

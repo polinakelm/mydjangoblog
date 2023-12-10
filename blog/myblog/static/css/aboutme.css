@@ -1,0 +1,26 @@
+h1{
+    color: #000;
+    text-align: justify;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 51px;
+
+}
+
+h2{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 51px;
+}
+
+.ab_me_content{
+    padding-left: 318px;
+    padding-right: 318px;
+}

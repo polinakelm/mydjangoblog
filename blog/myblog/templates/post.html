@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+
+    <link href="{% static 'css/post.css' %}" rel="stylesheet">
+    <div class="post">
+    <h1 class="post_title">
+      Pink Floyd - The Wall
+    </h1>
+    <div class="post_content">
+      <h2 class="post_text">
+        Стена - это один из моих самых любимых альбомов, фильмов и первая серьёзная пластинка.
+        Я охотилась именно на оригинал 1979 года (год выпуска альбома) и британское издание.
+        Так как это не первый разрывной альбом Pink Floyd, Стена печаталась огромными тиражами и даже спустя 45 лет какой-нибудь канадский, японский или американский оригинал продаётся в любом виниловом магазине примерно за 10000р.
+        С бритаснким изданием сложнее, его хрен найдёшь
+        и цены колеблются от 40000 до 100000 р.
+        В любом случае, оно того стоит. На чём ты ещё услышишь такой шикарный переход с The Happiest Days of Our Lives на Another Brick In The Wall (2)?
+      </h2>
+      <img src="{% static 'img/d2b1c27d805b034dd51d6418a8d7882f.jpeg' %}" class="post_img">
+    </div>
+    </div>
+    <footer>
+      <img src="{% static 'img/pink-floyd-the-wall-we8sf897ss7cjelp%201.png' %}" alt="УПС" class="footer_img">
+    </footer>
+{% endblock %}

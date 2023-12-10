@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+<link href="{% static 'css/index.css' %}" rel="stylesheet">
+<div class="posts">
+    <div class="post">
+        <a href="post"><img src="{% static 'img/Rectangle%201.png' %}" href="post">
+        <h3>Pink Floyd - The Wall</h3></a>
+    </div>
+    <div class="post">
+        <a href="post"><img src="{% static 'img/Rectangle%202.png' %}">
+        <h3>David Bowie -Young Americans</h3></a>
+    </div>
+    <div class="post">
+        <a href="post"><img src="{% static 'img/Rectangle%203.png' %}">
+        <h3>Rocky Horror Picture Show</h3></a>
+    </div>
+    <div class="post">
+        <a href="post"><img src="{% static 'img/Rectangle%204.png' %}">
+        <h3>Daniel Lopatin - Uncut Gems</h3></a>
+    </div>
+    <div class="post">
+        <a href="post"><img src="{% static 'img/Rectangle%205.png' %}">
+        <h3>увула - я думал у меня получится </h3></a>
+    </div>
+    <div class="post">
+        <a href="post"><img src="{% static 'img/Rectangle%206.png' %}">
+        <h3>Pulp Fiction</h3></a>
+    </div>
+
+</div>
+<aside class="aside_l">
+    <h2>back</h2>
+    <img src="{% static 'img/arrow_right.svg' %}"  class="arrow_left">
+</aside>
+<aside class="aside_r">
+    <h2>more</h2>
+    <img src="{% static 'img/arrow_right.svg' %}" class="arrow_right">
+</aside>
+{% endblock %}
