@@ -12,9 +12,9 @@ def post(request):
     return render(request, 'post.html', data)
 
 def aboutme(request):
-    title = "aboutme"
+    title = "about"
     data = {"title": title}
-    return render(request, 'aboutme.html', data)
+    return render(request, 'about.html', data)
 
 
 def feedback(request):

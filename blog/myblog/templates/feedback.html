@@ -4,8 +4,9 @@
 {% block content%}
 <link href="{% static 'css/feedback.css' %}" rel="stylesheet">
 <form method="post" action="{% url 'feedback' %}">
-    {% csrf_token %}
+
     <div class="feedback_form">
+         {% csrf_token %}
       <h1>Можешь поделиться обратной связью :)</h1>
         <section class="cont">
             <h2>Имя:</h2>
@@ -13,14 +14,41 @@
         </section>
       <section class="cont">
             <h2>Почта:</h2>
-            <input class="email" name="email">
+            <input class="email" name="email" type="email">
       </section>
             <input class="feedback" name="feedback">
       <button type="submit">Отправить</button>
     </div>
 </form>
+
+<script>
+  function validateForm() {
+    const nameField = document.querySelector("[name='name']");
+    const emailField = document.querySelector("[name='email']");
+    const feedbackField = document.querySelector(
+      "[name='feedback']"
+    ).value;
+    if (nameField.value === '' || emailField.value === '') {
+      alert("Заполните все поля, пожалуйста.");
+      return false;
+    } else if (feedbackField === '') {
+      alert("Пожалуйста, оставьте свой отзыв.");
+      return false;
+    }
+    return true;
+  }
+
+  const form = document.querySelector('form');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const isValid = validateForm();
+    if (!isValid) return;
+    form.submit();
+  });
+</script>
+
 <div class="feedbacks_display">
-  <h1>Последние отзывы</h1>
+  <h1>Отзывы</h1>
   {% for feedback in feedbacks %}
         <div>
           <h2>От: {{ feedback.name }}</h2>
